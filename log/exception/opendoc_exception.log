@@ -1,0 +1,1635 @@
+2023-05-10 00:01:58.699 -ERROR  [nio-8082-exec-2] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:SQLErrorCodeSQLExceptionTranslator.java
+报错的类：org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator
+报错方法：：doTranslate
+报错的行：235
+报错的message：
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'activity.item_d_o' doesn't exist
+### The error may exist in com/mu/activity/dao/ItemDOMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT id,title,price,description,sales,img_url FROM item_d_o WHERE id=?
+### Cause: java.sql.SQLSyntaxErrorException: Table 'activity.item_d_o' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'activity.item_d_o' doesn't exist
+------------------
+
+
+2023-05-10 00:01:58.700 -ERROR  [nio-8082-exec-2] c.m.a.e.GlobalExceptionHandler : e:BadSqlGrammarException,cause:java.sql.SQLSyntaxErrorException: Table 'activity.item_d_o' doesn't exist,path:/item/goodsDetail/1612700343783940096
+2023-05-10 00:04:31.064 -ERROR  [nio-8082-exec-4] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:SQLErrorCodeSQLExceptionTranslator.java
+报错的类：org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator
+报错方法：：doTranslate
+报错的行：235
+报错的message：
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'activity.item_d_o' doesn't exist
+### The error may exist in com/mu/activity/dao/ItemDOMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT id,title,price,description,sales,img_url FROM item_d_o WHERE id=?
+### Cause: java.sql.SQLSyntaxErrorException: Table 'activity.item_d_o' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'activity.item_d_o' doesn't exist
+------------------
+
+
+2023-05-10 00:04:31.064 -ERROR  [nio-8082-exec-4] c.m.a.e.GlobalExceptionHandler : e:BadSqlGrammarException,cause:java.sql.SQLSyntaxErrorException: Table 'activity.item_d_o' doesn't exist,path:/item/goodsDetail/1612700343783940096
+2023-05-10 00:06:23.038 -ERROR  [nio-8082-exec-2] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:SQLErrorCodeSQLExceptionTranslator.java
+报错的类：org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator
+报错方法：：doTranslate
+报错的行：235
+报错的message：
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'activity.item_d_o' doesn't exist
+### The error may exist in com/mu/activity/dao/ItemDOMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT id,title,price,description,sales,img_url FROM item_d_o WHERE id=?
+### Cause: java.sql.SQLSyntaxErrorException: Table 'activity.item_d_o' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'activity.item_d_o' doesn't exist
+------------------
+
+
+2023-05-10 00:06:23.038 -ERROR  [nio-8082-exec-2] c.m.a.e.GlobalExceptionHandler : e:BadSqlGrammarException,cause:java.sql.SQLSyntaxErrorException: Table 'activity.item_d_o' doesn't exist,path:/item/goodsDetail/1612700343783940096
+2023-05-10 14:33:45.638 -ERROR  [           main] LoggingFailureAnalysisReporter : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8082 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
+
+2023-05-10 14:37:04.937 -ERROR  [nio-8085-exec-4] c.m.a.i.LoginInterceptor       : token parse error: The Token has expired on Tue May 09 15:16:56 CST 2023.
+2023-05-10 14:37:04.939 -ERROR  [nio-8085-exec-4] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message登录过期,path:/error,
+2023-05-10 14:37:04.939 -ERROR  [nio-8085-exec-4] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:LoginInterceptor.java
+报错的类：com.mu.activity.interceptor.LoginInterceptor
+报错方法：：preHandle
+报错的行：64
+报错的message：登录过期
+------------------
+
+
+2023-05-10 14:37:46.084 -ERROR  [nio-8085-exec-6] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message活动结束了,path:/activity/createActivity/,
+2023-05-10 14:37:46.084 -ERROR  [nio-8085-exec-6] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：125
+报错的message：活动结束了
+------------------
+
+
+2023-05-10 14:46:22.365 -ERROR  [io-8085-exec-26] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.366 -ERROR  [io-8085-exec-26] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.369 -ERROR  [io-8085-exec-11] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.370 -ERROR  [io-8085-exec-11] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.373 -ERROR  [nio-8085-exec-4] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.373 -ERROR  [nio-8085-exec-4] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.375 -ERROR  [io-8085-exec-17] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.375 -ERROR  [io-8085-exec-17] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.377 -ERROR  [io-8085-exec-14] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.378 -ERROR  [io-8085-exec-14] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.379 -ERROR  [io-8085-exec-21] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.380 -ERROR  [io-8085-exec-21] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.381 -ERROR  [io-8085-exec-28] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.383 -ERROR  [io-8085-exec-28] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.386 -ERROR  [io-8085-exec-29] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.386 -ERROR  [io-8085-exec-29] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.388 -ERROR  [nio-8085-exec-2] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.388 -ERROR  [nio-8085-exec-2] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.390 -ERROR  [nio-8085-exec-1] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.391 -ERROR  [nio-8085-exec-1] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.392 -ERROR  [io-8085-exec-20] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.392 -ERROR  [io-8085-exec-20] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.394 -ERROR  [io-8085-exec-16] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.394 -ERROR  [io-8085-exec-16] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.396 -ERROR  [nio-8085-exec-3] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.396 -ERROR  [nio-8085-exec-3] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.398 -ERROR  [io-8085-exec-12] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.399 -ERROR  [io-8085-exec-12] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.401 -ERROR  [nio-8085-exec-5] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.401 -ERROR  [nio-8085-exec-5] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.403 -ERROR  [io-8085-exec-22] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.404 -ERROR  [io-8085-exec-22] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.407 -ERROR  [io-8085-exec-10] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.407 -ERROR  [io-8085-exec-10] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.408 -ERROR  [io-8085-exec-13] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.409 -ERROR  [io-8085-exec-13] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.412 -ERROR  [io-8085-exec-19] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.412 -ERROR  [io-8085-exec-19] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.414 -ERROR  [io-8085-exec-25] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.415 -ERROR  [io-8085-exec-25] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.417 -ERROR  [nio-8085-exec-6] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.417 -ERROR  [nio-8085-exec-6] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.420 -ERROR  [io-8085-exec-18] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.420 -ERROR  [io-8085-exec-18] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.422 -ERROR  [io-8085-exec-30] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.422 -ERROR  [io-8085-exec-30] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.424 -ERROR  [nio-8085-exec-7] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.424 -ERROR  [nio-8085-exec-7] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.426 -ERROR  [nio-8085-exec-8] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.426 -ERROR  [nio-8085-exec-8] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.428 -ERROR  [nio-8085-exec-9] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.429 -ERROR  [nio-8085-exec-9] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:46:22.431 -ERROR  [io-8085-exec-24] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:46:22.431 -ERROR  [io-8085-exec-24] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：219
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:55:59.606 -ERROR  [nio-8085-exec-2] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:SQLErrorCodeSQLExceptionTranslator.java
+报错的类：org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator
+报错方法：：doTranslate
+报错的行：235
+报错的message：
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'activity.activity_d_o' doesn't exist
+### The error may exist in com/mu/activity/dao/ActivityDOMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT COUNT( * ) FROM activity_d_o     WHERE (user_id = ? AND item_id = ?)
+### Cause: java.sql.SQLSyntaxErrorException: Table 'activity.activity_d_o' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'activity.activity_d_o' doesn't exist
+------------------
+
+
+2023-05-10 14:55:59.606 -ERROR  [nio-8085-exec-2] c.m.a.e.GlobalExceptionHandler : e:BadSqlGrammarException,cause:java.sql.SQLSyntaxErrorException: Table 'activity.activity_d_o' doesn't exist,path:/activity/createActivity/
+2023-05-10 14:56:47.424 -ERROR  [nio-8085-exec-2] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:56:47.425 -ERROR  [nio-8085-exec-2] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：144
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 14:58:28.317 -ERROR  [nio-8085-exec-5] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 14:58:28.317 -ERROR  [nio-8085-exec-5] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：144
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 15:00:38.247 -ERROR  [nio-8085-exec-9] c.m.a.i.LoginInterceptor       : token parse error: The Token has expired on Wed May 10 15:00:34 CST 2023.
+2023-05-10 15:01:37.606 -ERROR  [io-8085-exec-10] c.m.a.i.LoginInterceptor       : token parse error: The Token has expired on Wed May 10 15:00:34 CST 2023.
+2023-05-10 15:01:37.607 -ERROR  [io-8085-exec-10] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message登录过期,path:/activity/createActivity/,
+2023-05-10 15:01:37.607 -ERROR  [io-8085-exec-10] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:LoginInterceptor.java
+报错的类：com.mu.activity.interceptor.LoginInterceptor
+报错方法：：preHandle
+报错的行：64
+报错的message：登录过期
+------------------
+
+
+2023-05-10 15:01:52.066 -ERROR  [nio-8085-exec-2] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 15:01:52.066 -ERROR  [nio-8085-exec-2] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：144
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 15:02:10.617 -ERROR  [nio-8085-exec-3] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 15:02:10.617 -ERROR  [nio-8085-exec-3] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：144
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 15:03:04.587 -ERROR  [nio-8085-exec-4] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 15:03:04.588 -ERROR  [nio-8085-exec-4] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：144
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 15:03:57.984 -ERROR  [nio-8085-exec-6] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 15:03:57.985 -ERROR  [nio-8085-exec-6] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：144
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 15:05:04.705 -ERROR  [nio-8085-exec-5] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 15:05:04.705 -ERROR  [nio-8085-exec-5] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：144
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 15:07:18.464 -ERROR  [io-8085-exec-10] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 15:07:18.464 -ERROR  [io-8085-exec-10] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：144
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 15:22:35.788 -ERROR  [nio-8085-exec-2] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 15:22:35.789 -ERROR  [nio-8085-exec-2] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：143
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 15:25:02.784 -ERROR  [nio-8085-exec-5] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 15:25:02.784 -ERROR  [nio-8085-exec-5] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：143
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 15:28:43.021 -ERROR  [nio-8085-exec-2] c.m.a.i.LoginInterceptor       : token parse error: The Token has expired on Wed May 10 15:25:43 CST 2023.
+2023-05-10 15:28:43.026 -ERROR  [nio-8085-exec-2] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message登录过期,path:/activity/createActivity/,
+2023-05-10 15:28:43.026 -ERROR  [nio-8085-exec-2] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:LoginInterceptor.java
+报错的类：com.mu.activity.interceptor.LoginInterceptor
+报错方法：：preHandle
+报错的行：64
+报错的message：登录过期
+------------------
+
+
+2023-05-10 15:28:53.658 -ERROR  [nio-8085-exec-4] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 15:28:53.659 -ERROR  [nio-8085-exec-4] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：144
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 15:29:59.740 -ERROR  [nio-8085-exec-7] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 15:29:59.741 -ERROR  [nio-8085-exec-7] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：144
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 15:30:08.475 -ERROR  [nio-8085-exec-8] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 15:30:08.475 -ERROR  [nio-8085-exec-8] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：144
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 15:39:20.289 -ERROR  [nio-8085-exec-3] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:39:20.290 -ERROR  [nio-8085-exec-3] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:39:21.660 -ERROR  [nio-8085-exec-4] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:39:21.660 -ERROR  [nio-8085-exec-4] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.154 -ERROR  [nio-8085-exec-4] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.155 -ERROR  [nio-8085-exec-4] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.165 -ERROR  [io-8085-exec-14] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.166 -ERROR  [io-8085-exec-14] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.174 -ERROR  [io-8085-exec-19] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.175 -ERROR  [io-8085-exec-19] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.184 -ERROR  [io-8085-exec-15] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.186 -ERROR  [io-8085-exec-15] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.192 -ERROR  [io-8085-exec-28] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.193 -ERROR  [io-8085-exec-28] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.201 -ERROR  [nio-8085-exec-9] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.202 -ERROR  [nio-8085-exec-9] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.208 -ERROR  [io-8085-exec-23] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.208 -ERROR  [io-8085-exec-23] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.213 -ERROR  [io-8085-exec-29] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.214 -ERROR  [io-8085-exec-29] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.220 -ERROR  [io-8085-exec-20] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.220 -ERROR  [io-8085-exec-20] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.230 -ERROR  [nio-8085-exec-8] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.231 -ERROR  [nio-8085-exec-8] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.239 -ERROR  [io-8085-exec-17] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.239 -ERROR  [io-8085-exec-17] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.247 -ERROR  [io-8085-exec-12] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.248 -ERROR  [io-8085-exec-12] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.253 -ERROR  [nio-8085-exec-2] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.255 -ERROR  [nio-8085-exec-2] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.260 -ERROR  [nio-8085-exec-7] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.260 -ERROR  [nio-8085-exec-7] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.283 -ERROR  [io-8085-exec-10] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.284 -ERROR  [io-8085-exec-10] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.298 -ERROR  [nio-8085-exec-5] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.298 -ERROR  [nio-8085-exec-5] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.311 -ERROR  [io-8085-exec-30] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.311 -ERROR  [io-8085-exec-30] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.321 -ERROR  [io-8085-exec-13] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.321 -ERROR  [io-8085-exec-13] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.326 -ERROR  [io-8085-exec-22] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.327 -ERROR  [io-8085-exec-22] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.333 -ERROR  [io-8085-exec-18] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.334 -ERROR  [io-8085-exec-18] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.343 -ERROR  [nio-8085-exec-1] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.343 -ERROR  [nio-8085-exec-1] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.351 -ERROR  [io-8085-exec-11] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.351 -ERROR  [io-8085-exec-11] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.357 -ERROR  [io-8085-exec-24] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.358 -ERROR  [io-8085-exec-24] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.365 -ERROR  [io-8085-exec-21] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.365 -ERROR  [io-8085-exec-21] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.370 -ERROR  [io-8085-exec-26] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.370 -ERROR  [io-8085-exec-26] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.375 -ERROR  [io-8085-exec-16] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.375 -ERROR  [io-8085-exec-16] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.379 -ERROR  [nio-8085-exec-3] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.380 -ERROR  [nio-8085-exec-3] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.383 -ERROR  [io-8085-exec-25] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.385 -ERROR  [io-8085-exec-25] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 15:40:21.389 -ERROR  [io-8085-exec-27] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 15:40:21.389 -ERROR  [io-8085-exec-27] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：217
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 17:53:58.902 -ERROR  [nio-8085-exec-3] c.m.a.i.LoginInterceptor       : token parse error: The Token has expired on Wed May 10 15:25:43 CST 2023.
+2023-05-10 17:54:04.232 -ERROR  [nio-8085-exec-6] c.m.a.i.LoginInterceptor       : token parse error: The Token has expired on Wed May 10 15:25:43 CST 2023.
+2023-05-10 17:54:05.532 -ERROR  [nio-8085-exec-7] c.m.a.i.LoginInterceptor       : token parse error: The Token has expired on Wed May 10 15:25:43 CST 2023.
+2023-05-10 17:54:06.270 -ERROR  [io-8085-exec-10] c.m.a.i.LoginInterceptor       : token parse error: The Token has expired on Wed May 10 15:25:43 CST 2023.
+2023-05-10 17:55:01.164 -ERROR  [nio-8085-exec-1] c.m.a.i.LoginInterceptor       : token parse error: The Token has expired on Wed May 10 15:25:43 CST 2023.
+2023-05-10 17:55:01.773 -ERROR  [nio-8085-exec-4] c.m.a.i.LoginInterceptor       : token parse error: The Token has expired on Wed May 10 15:25:43 CST 2023.
+2023-05-10 17:55:02.413 -ERROR  [nio-8085-exec-5] c.m.a.i.LoginInterceptor       : token parse error: The Token has expired on Wed May 10 15:25:43 CST 2023.
+2023-05-10 17:55:06.394 -ERROR  [nio-8085-exec-8] c.m.a.i.LoginInterceptor       : token parse error: The Token has expired on Wed May 10 15:25:43 CST 2023.
+2023-05-10 17:55:07.021 -ERROR  [nio-8085-exec-9] c.m.a.i.LoginInterceptor       : token parse error: The Token has expired on Wed May 10 15:25:43 CST 2023.
+2023-05-10 17:55:07.681 -ERROR  [nio-8085-exec-2] c.m.a.i.LoginInterceptor       : token parse error: The Token has expired on Wed May 10 15:25:43 CST 2023.
+2023-05-10 17:55:09.826 -ERROR  [nio-8085-exec-3] c.m.a.i.LoginInterceptor       : token parse error: The Token has expired on Wed May 10 15:25:43 CST 2023.
+2023-05-10 17:55:10.344 -ERROR  [nio-8085-exec-6] c.m.a.i.LoginInterceptor       : token parse error: The Token has expired on Wed May 10 15:25:43 CST 2023.
+2023-05-10 17:55:10.619 -ERROR  [nio-8085-exec-7] c.m.a.i.LoginInterceptor       : token parse error: The Token has expired on Wed May 10 15:25:43 CST 2023.
+2023-05-10 17:55:10.929 -ERROR  [io-8085-exec-10] c.m.a.i.LoginInterceptor       : token parse error: The Token has expired on Wed May 10 15:25:43 CST 2023.
+2023-05-10 17:55:15.224 -ERROR  [nio-8085-exec-1] c.m.a.i.LoginInterceptor       : token parse error: The Token has expired on Wed May 10 15:25:43 CST 2023.
+2023-05-10 22:01:17.589 -ERROR  [nio-8085-exec-2] c.m.a.i.LoginInterceptor       : token parse error: The Token has expired on Wed May 10 15:52:46 CST 2023.
+2023-05-10 22:01:17.594 -ERROR  [nio-8085-exec-2] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message登录过期,path:/activity/createActivity/,
+2023-05-10 22:01:17.594 -ERROR  [nio-8085-exec-2] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:LoginInterceptor.java
+报错的类：com.mu.activity.interceptor.LoginInterceptor
+报错方法：：preHandle
+报错的行：64
+报错的message：登录过期
+------------------
+
+
+2023-05-10 22:01:30.334 -ERROR  [nio-8085-exec-3] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 22:01:30.335 -ERROR  [nio-8085-exec-3] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：213
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 22:02:20.073 -ERROR  [nio-8085-exec-5] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 22:02:20.073 -ERROR  [nio-8085-exec-5] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：213
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 22:02:35.369 -ERROR  [nio-8085-exec-6] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 22:02:35.369 -ERROR  [nio-8085-exec-6] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：213
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 22:02:59.986 -ERROR  [nio-8085-exec-7] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 22:02:59.987 -ERROR  [nio-8085-exec-7] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：213
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 22:03:17.120 -ERROR  [nio-8085-exec-9] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 22:03:17.120 -ERROR  [nio-8085-exec-9] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：213
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 22:03:31.742 -ERROR  [nio-8085-exec-8] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 22:03:31.743 -ERROR  [nio-8085-exec-8] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：213
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 22:05:32.457 -ERROR  [nio-8085-exec-2] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 22:05:32.458 -ERROR  [nio-8085-exec-2] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：213
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 22:06:53.812 -ERROR  [nio-8085-exec-5] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 22:06:53.813 -ERROR  [nio-8085-exec-5] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：213
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 22:07:04.859 -ERROR  [nio-8085-exec-6] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 22:07:04.859 -ERROR  [nio-8085-exec-6] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：213
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 22:07:45.577 -ERROR  [nio-8085-exec-7] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 22:07:45.577 -ERROR  [nio-8085-exec-7] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：213
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 22:10:54.788 -ERROR  [nio-8085-exec-8] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 22:10:54.790 -ERROR  [nio-8085-exec-8] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：213
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 22:16:54.347 -ERROR  [nio-8085-exec-2] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 22:16:54.347 -ERROR  [nio-8085-exec-2] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：209
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 22:17:03.199 -ERROR  [nio-8085-exec-3] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 22:17:03.199 -ERROR  [nio-8085-exec-3] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：209
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 22:17:16.356 -ERROR  [nio-8085-exec-6] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 22:17:16.356 -ERROR  [nio-8085-exec-6] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：209
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 22:26:15.725 -ERROR  [nio-8085-exec-2] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:RequestMappingInfoHandlerMapping.java
+报错的类：org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping
+报错方法：：handleNoMatch
+报错的行：201
+报错的message：Request method 'GET' not supported
+------------------
+
+
+2023-05-10 22:26:15.725 -ERROR  [nio-8085-exec-2] c.m.a.e.GlobalExceptionHandler : e:HttpRequestMethodNotSupportedException,cause:null,path:/activity/createActivity/
+2023-05-10 22:26:29.231 -ERROR  [nio-8085-exec-3] c.m.a.i.LoginInterceptor       : token parse error: The Token has expired on Wed May 10 22:25:21 CST 2023.
+2023-05-10 22:26:29.233 -ERROR  [nio-8085-exec-3] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message登录过期,path:/activity/preheat/,
+2023-05-10 22:26:29.233 -ERROR  [nio-8085-exec-3] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:LoginInterceptor.java
+报错的类：com.mu.activity.interceptor.LoginInterceptor
+报错方法：：preHandle
+报错的行：64
+报错的message：登录过期
+------------------
+
+
+2023-05-10 22:26:53.859 -ERROR  [nio-8085-exec-6] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 22:26:53.859 -ERROR  [nio-8085-exec-6] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：209
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 22:28:49.271 -ERROR  [nio-8085-exec-9] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message库存不不足,path:/activity/createActivity/,
+2023-05-10 22:28:49.271 -ERROR  [nio-8085-exec-9] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：209
+报错的message：库存不不足
+------------------
+
+
+2023-05-10 22:35:11.274 -ERROR  [nio-8085-exec-3] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：preheat
+报错的行：308
+报错的message：null
+------------------
+
+
+2023-05-10 22:35:11.275 -ERROR  [nio-8085-exec-3] c.m.a.e.GlobalExceptionHandler : e:NullPointerException,cause:null,path:/activity/preheat/
+2023-05-10 22:35:27.326 -ERROR  [nio-8085-exec-1] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：preheat
+报错的行：308
+报错的message：null
+------------------
+
+
+2023-05-10 22:35:27.326 -ERROR  [nio-8085-exec-1] c.m.a.e.GlobalExceptionHandler : e:NullPointerException,cause:null,path:/activity/preheat/
+2023-05-10 22:35:55.764 -ERROR  [nio-8085-exec-4] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：preheat
+报错的行：308
+报错的message：null
+------------------
+
+
+2023-05-10 22:35:55.764 -ERROR  [nio-8085-exec-4] c.m.a.e.GlobalExceptionHandler : e:NullPointerException,cause:null,path:/activity/preheat/
+2023-05-10 22:36:27.188 -ERROR  [nio-8085-exec-4] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 22:36:27.190 -ERROR  [nio-8085-exec-4] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：245
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 22:38:49.504 -ERROR  [nio-8085-exec-4] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message不允许重复报名,path:/activity/createActivity/,
+2023-05-10 22:38:49.506 -ERROR  [nio-8085-exec-4] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：225
+报错的message：不允许重复报名
+------------------
+
+
+2023-05-10 22:38:49.531 -ERROR  [io-8085-exec-19] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message不允许重复报名,path:/activity/createActivity/,
+2023-05-10 22:38:49.531 -ERROR  [io-8085-exec-19] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：225
+报错的message：不允许重复报名
+------------------
+
+
+2023-05-10 22:38:49.544 -ERROR  [nio-8085-exec-2] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message不允许重复报名,path:/activity/createActivity/,
+2023-05-10 22:38:49.545 -ERROR  [nio-8085-exec-2] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：225
+报错的message：不允许重复报名
+------------------
+
+
+2023-05-10 22:38:49.575 -ERROR  [io-8085-exec-24] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message不允许重复报名,path:/activity/createActivity/,
+2023-05-10 22:38:49.575 -ERROR  [io-8085-exec-24] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：225
+报错的message：不允许重复报名
+------------------
+
+
+2023-05-10 22:38:49.575 -ERROR  [io-8085-exec-29] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message不允许重复报名,path:/activity/createActivity/,
+2023-05-10 22:38:49.575 -ERROR  [io-8085-exec-29] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：225
+报错的message：不允许重复报名
+------------------
+
+
+2023-05-10 22:38:49.597 -ERROR  [io-8085-exec-18] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message不允许重复报名,path:/activity/createActivity/,
+2023-05-10 22:38:49.598 -ERROR  [io-8085-exec-18] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：225
+报错的message：不允许重复报名
+------------------
+
+
+2023-05-10 22:38:49.617 -ERROR  [nio-8085-exec-5] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message不允许重复报名,path:/activity/createActivity/,
+2023-05-10 22:38:49.617 -ERROR  [nio-8085-exec-5] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：225
+报错的message：不允许重复报名
+------------------
+
+
+2023-05-10 22:38:49.618 -ERROR  [nio-8085-exec-6] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message不允许重复报名,path:/activity/createActivity/,
+2023-05-10 22:38:49.619 -ERROR  [nio-8085-exec-6] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：225
+报错的message：不允许重复报名
+------------------
+
+
+2023-05-10 22:38:49.638 -ERROR  [nio-8085-exec-1] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message不允许重复报名,path:/activity/createActivity/,
+2023-05-10 22:38:49.639 -ERROR  [nio-8085-exec-1] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：225
+报错的message：不允许重复报名
+------------------
+
+
+2023-05-10 22:38:49.746 -ERROR  [io-8085-exec-28] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message不允许重复报名,path:/activity/createActivity/,
+2023-05-10 22:38:49.747 -ERROR  [io-8085-exec-28] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：225
+报错的message：不允许重复报名
+------------------
+
+
+2023-05-10 22:38:49.750 -ERROR  [io-8085-exec-17] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message不允许重复报名,path:/activity/createActivity/,
+2023-05-10 22:38:49.752 -ERROR  [io-8085-exec-17] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：225
+报错的message：不允许重复报名
+------------------
+
+
+2023-05-10 22:38:49.755 -ERROR  [nio-8085-exec-9] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 22:38:49.756 -ERROR  [nio-8085-exec-9] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：245
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 22:38:49.768 -ERROR  [io-8085-exec-15] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message不允许重复报名,path:/activity/createActivity/,
+2023-05-10 22:38:49.769 -ERROR  [io-8085-exec-15] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：225
+报错的message：不允许重复报名
+------------------
+
+
+2023-05-10 22:38:49.779 -ERROR  [io-8085-exec-21] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message不允许重复报名,path:/activity/createActivity/,
+2023-05-10 22:38:49.780 -ERROR  [io-8085-exec-21] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：225
+报错的message：不允许重复报名
+------------------
+
+
+2023-05-10 22:38:49.781 -ERROR  [nio-8085-exec-8] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message不允许重复报名,path:/activity/createActivity/,
+2023-05-10 22:38:49.782 -ERROR  [io-8085-exec-25] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 22:38:49.782 -ERROR  [nio-8085-exec-8] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：225
+报错的message：不允许重复报名
+------------------
+
+
+2023-05-10 22:38:49.782 -ERROR  [io-8085-exec-25] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：245
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 22:38:49.790 -ERROR  [io-8085-exec-10] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message不允许重复报名,path:/activity/createActivity/,
+2023-05-10 22:38:49.790 -ERROR  [io-8085-exec-10] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：225
+报错的message：不允许重复报名
+------------------
+
+
+2023-05-10 22:38:49.796 -ERROR  [io-8085-exec-30] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 22:38:49.796 -ERROR  [io-8085-exec-30] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：245
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 22:38:49.796 -ERROR  [io-8085-exec-11] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message不允许重复报名,path:/activity/createActivity/,
+2023-05-10 22:38:49.796 -ERROR  [io-8085-exec-11] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：225
+报错的message：不允许重复报名
+------------------
+
+
+2023-05-10 22:38:49.798 -ERROR  [io-8085-exec-16] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message不允许重复报名,path:/activity/createActivity/,
+2023-05-10 22:38:49.798 -ERROR  [io-8085-exec-16] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：225
+报错的message：不允许重复报名
+------------------
+
+
+2023-05-10 22:38:49.799 -ERROR  [io-8085-exec-12] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message不允许重复报名,path:/activity/createActivity/,
+2023-05-10 22:38:49.802 -ERROR  [io-8085-exec-12] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：225
+报错的message：不允许重复报名
+------------------
+
+
+2023-05-10 22:38:49.806 -ERROR  [io-8085-exec-13] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message不允许重复报名,path:/activity/createActivity/,
+2023-05-10 22:38:49.807 -ERROR  [io-8085-exec-13] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：225
+报错的message：不允许重复报名
+------------------
+
+
+2023-05-10 22:38:49.809 -ERROR  [nio-8085-exec-7] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message不允许重复报名,path:/activity/createActivity/,
+2023-05-10 22:38:49.810 -ERROR  [nio-8085-exec-7] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：225
+报错的message：不允许重复报名
+------------------
+
+
+2023-05-10 22:38:49.816 -ERROR  [io-8085-exec-20] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 22:38:49.816 -ERROR  [io-8085-exec-20] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：245
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 22:38:49.820 -ERROR  [io-8085-exec-22] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message不允许重复报名,path:/activity/createActivity/,
+2023-05-10 22:38:49.820 -ERROR  [io-8085-exec-22] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：225
+报错的message：不允许重复报名
+------------------
+
+
+2023-05-10 22:38:49.824 -ERROR  [io-8085-exec-27] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 22:38:49.824 -ERROR  [io-8085-exec-27] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：245
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 22:38:49.829 -ERROR  [io-8085-exec-26] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 22:38:49.829 -ERROR  [io-8085-exec-26] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：245
+报错的message：用户已经抢到了
+------------------
+
+
+2023-05-10 22:38:49.831 -ERROR  [io-8085-exec-23] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message不允许重复报名,path:/activity/createActivity/,
+2023-05-10 22:38:49.831 -ERROR  [io-8085-exec-23] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：seckillActivity
+报错的行：225
+报错的message：不允许重复报名
+------------------
+
+
+2023-05-10 22:38:49.842 -ERROR  [io-8085-exec-14] c.m.a.e.GlobalExceptionHandler : e:BusinessException,message用户已经抢到了,path:/activity/createActivity/,
+2023-05-10 22:38:49.842 -ERROR  [io-8085-exec-14] c.m.a.e.GlobalExceptionHandler : 
+
+-----------------
+报错文件名:ActivityServiceImpl.java
+报错的类：com.mu.activity.service.impl.ActivityServiceImpl
+报错方法：：createActivity2
+报错的行：245
+报错的message：用户已经抢到了
+------------------
+
+

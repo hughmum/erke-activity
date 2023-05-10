@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mu.activity.dao.ItemDOMapper">
+  <resultMap id="BaseResultMap" type="com.mu.activity.entity.ItemDO">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="price" jdbcType="DOUBLE" property="price" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="sales" jdbcType="INTEGER" property="sales" />
+    <result column="img_url" jdbcType="VARCHAR" property="imgUrl" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, title, price, description, sales, img_url
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from item
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="selectListAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from item
+    <where>
+      <if test="item.id != null">
+        and id = #{item.id}
+      </if>
+      <if test="item.title != null and item.title != ''">
+        and title = #{item.title}
+      </if>
+      <if test="item.price != null">
+        and price = #{item.price}
+      </if>
+      <if test="item.description != null and item.description != ''">
+        and description = #{item.description}
+      </if>
+      <if test="item.sales != null">
+        and sales = #{item.sales}
+      </if>
+      <if test="item.imgUrl != null and item.imgUrl != ''">
+        and img_url = #{item.imgUrl}
+      </if>
+    </where>
+
+  </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from item
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.mu.activity.entity.ItemDO" useGeneratedKeys="true">
+    insert into item (title, price, description, 
+      sales, img_url)
+    values (#{title,jdbcType=VARCHAR}, #{price,jdbcType=DOUBLE}, #{description,jdbcType=VARCHAR}, 
+      #{sales,jdbcType=INTEGER}, #{imgUrl,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" keyColumn="id" keyProperty="id" parameterType="com.mu.activity.entity.ItemDO" useGeneratedKeys="true">
+    insert into item
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="title != null">
+        title,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="description != null">
+        description,
+      </if>
+      <if test="sales != null">
+        sales,
+      </if>
+      <if test="imgUrl != null">
+        img_url,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="title != null">
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=DOUBLE},
+      </if>
+      <if test="description != null">
+        #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="sales != null">
+        #{sales,jdbcType=INTEGER},
+      </if>
+      <if test="imgUrl != null">
+        #{imgUrl,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.mu.activity.entity.ItemDO">
+    update item
+    <set>
+      <if test="title != null">
+        title = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="price != null">
+        price = #{price,jdbcType=DOUBLE},
+      </if>
+      <if test="description != null">
+        description = #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="sales != null">
+        sales = #{sales,jdbcType=INTEGER},
+      </if>
+      <if test="imgUrl != null">
+        img_url = #{imgUrl,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.mu.activity.entity.ItemDO">
+    update item
+    set title = #{title,jdbcType=VARCHAR},
+      price = #{price,jdbcType=DOUBLE},
+      description = #{description,jdbcType=VARCHAR},
+      sales = #{sales,jdbcType=INTEGER},
+      img_url = #{imgUrl,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="increaseSales" >
+    update item
+    set sales = sales + #{amount}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
